@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Credit Card Form</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+        }
+
+        .wrapper {
+            background-color: #9FCDCD;
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .title {
+            background-color: #DB6422;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: absolute;
+            top: 50px;
+            left: 550px;
+            width: 25%;
+            padding-left: 40px;
+            position: fixed;
+        }
+
+        .cardInfo {
+            color: #076361;
+            margin-bottom: 20px;
+        }
+
+        .cardInfo label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .cardInfo label:nth-child(2) {
+            margin-top: 5px;
+        }
+
+        .text {
+            width: 10px;
+        }
+
+        .numberCard {
+            margin-top: 70px;
+        }
+
+        .cardInfo input.number {
+            width: 350px;
+            padding: 5px;
+            background-color: #A9D3D2;
+            border: none;
+            outline: none;
+            color: #b4b4b4;
+            border-bottom: 1px solid #076361;
+        }
+
+        .image-container {
+            position: absolute;
+            right: -130px;
+            bottom: -45px;
+            z-index: 500;
+            width: 50%;
+            height: auto;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        form .date-cvv {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5px;
+            justify-content: flex-start;
+        }
+
+        .cardInfo input.number.nmbr {
+            width: 105px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2 class="title">CREDIT CARD DETAILS</h2>
+        <form>
+            <div class="cardInfo numberCard">
+                <label for="cardNumber">Card Number:</label>
+                <input class="number " type="text" id="cardNumber" name="cardNumber">
+            </div>
+            <div class="cardInfo">
+                <label for="nameCard">Name On Card:</label>
+                <input class="number" type="text" id="nameCard" name="nameCard">
+            </div>
+            <div class="date-cvv">
+                <div class="cardInfo">
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input class="number nmbr" type="text" id="expiryDate" name="expiryDate">
+                    <input class="number nmbr" type="text" id="expiryYear" name="expiryYear">
+                </div>
+                <div class="cardInfo">
+                    <label for="cvv">CVV / CVN:</label>
+                    <input class="number nmbr" type="text" id="cvv" name="cvv">
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="moon_flag.png" alt="Moon Flag">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
